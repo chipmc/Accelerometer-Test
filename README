@@ -1,0 +1,38 @@
+
+This is an example of how we can organize the LoRA node diles to afford abstraction from the particulars of the hardware
+
+|--Accelerometer Test - This code is meant to be rolled into the top-line of the See Insights LoRA node so this name is not importan
+|  |
+|  |--lib
+|  |  |--Project Specific hardware libraries
+|  |  |--Clock and sensors that are not covered in the Platform IO library
+|  |
+|  |--src
+|  |  |- Main File.cpp
+|  |  |- Top Level Classes (Storage, IO, Take Measurements, etc)
+|  |
+|  |--Presence - There could be others such as - Occupancy or Environment here - Major functionality for the code
+|  |
+|  |- README --> THIS FILE
+|
+|- platformio.ini
+|--src
+   |- 
+
+and a contents of `src/main.c`:
+```
+#include <Foo.h>
+#include <Bar.h>
+
+int main (void)
+{
+  ...
+}
+
+```
+
+PlatformIO Library Dependency Finder will find automatically dependent
+libraries scanning project source files.
+
+More information about PlatformIO Library Dependency Finder
+- https://docs.platformio.org/page/librarymanager/ldf.html

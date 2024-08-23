@@ -1,0 +1,8 @@
+#ifndef ERROR_CODES_H
+#define ERROR_CODES_H
+
+/** TOF SENSOR ERROR CODES **/
+#define RESULT_OK 0
+#define SENSOR_INITIALIZATION_ERROR -1
+
+#endif
