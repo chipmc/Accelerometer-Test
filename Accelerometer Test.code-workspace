@@ -2,6 +2,14 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "Power Off Sleep Test",
+			"path": "../../../PlatformIO/Projects/Power Off Sleep Test"
+		},
+		{
+			"name": "Power Off Sleep Test",
+			"path": "../Power Off Sleep Test"
 		}
 	],
 	"settings": {}
